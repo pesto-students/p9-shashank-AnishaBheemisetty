@@ -1,0 +1,78 @@
+div#main {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin-top: 100px;
+    margin-left: 700px;
+  }
+  div#main .content {
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    top: 40%;
+    font-size: 24pt;
+  }
+  
+  div#main .topleft {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    background: red;
+  }
+  div#main:hover .topleft {
+    transform: rotate(90deg);
+    transition-duration: 2s;
+    width: 100px;
+    height: 100px;
+    margin: -25px;
+  }
+  div#main .topright {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    background: yellow;
+  }
+  div#main:hover .topright {
+    transform: rotate(-90deg);
+    transition: 2s;
+    width: 100px;
+    height: 100px;
+    margin: -25px;
+  }
+  
+  div#main .bottomright {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 0px;
+    right: 0px;
+    background: green;
+  }
+  div#main:hover .bottomright {
+    transform: rotate(90deg);
+    transition: 2s;
+    width: 100px;
+    height: 100px;
+    margin: -25px;
+  }
+  
+  div#main .bottomleft {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 0px;
+    left: 0px;
+    background: blue;
+  }
+  div#main:hover .bottomleft {
+    transform: rotate(-90deg);
+    transition: 2s;
+    width: 100px;
+    height: 100px;
+    margin: -25px;
+  }
+  
