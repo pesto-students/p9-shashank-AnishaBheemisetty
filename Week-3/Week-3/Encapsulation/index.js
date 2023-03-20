@@ -1,24 +1,21 @@
-function createStack() 
-{
-    return{
-        items:[],
-        push(item) {
-            this.items.push(item);
-        },
-            pop() {
-                return this.items.pop();
-                
-            }
-    };
+function createStack() {
+  return {
+    items: [],
+    push(item) {
+      this.items.push(item);
+    },
+    pop() {
+      return this.items.pop();
+    },
+  };
 }
-const stack=createStack();
+const stack = createStack();
 stack.push(10);
 stack.push(5);
 stack.pop();
 stack.items;
-stack.items= [10,100,1000];
+stack.items = [10, 100, 1000];
 console.log(stack);
-
 
 //This function stack can work as expected but where as everything is accessed.
 
@@ -29,23 +26,23 @@ console.log(stack);
 // but stack.items or any other details shouldn’t be accessible.
 
 function createStackEncapsultion() {
-    const items = [];
-    return {
-      push(item) {
-        items.push(item);
-      },
-      pop() {
-        return items.pop();
-      }
-    };
-  }
-  
-  const stack = createStack();
-  stack.push(10);
-  stack.push(5);
-  console.log(stack.pop()); // => 5
-  
-  console.log(stack.items); // => undefined
+  const items = [];
+  return {
+    push(item) {
+      items.push(item);
+    },
+    pop() {
+      return items.pop();
+    },
+  };
+}
+
+const stack = createStack();
+stack.push(10);
+stack.push(5);
+console.log(stack.pop()); // => 5
+
+console.log(stack.items); // => undefined
 
 //The output here  after this change, there is no way to access or modify items array ,from the outside of createStack() scope.
 
