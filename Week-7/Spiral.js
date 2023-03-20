@@ -1,3 +1,4 @@
+
 function print(arr, i, j, m, n) {
   // If i or j lies outside the matrix
   if (i >= m || j >= n) return;
@@ -24,7 +25,7 @@ function print(arr, i, j, m, n) {
   // First Column are not same
   if (n - 1 != j) {
     for (let p = m - 2; p > i; p--) {
-      document.write(arr[p][j] + " ");
+      console.log(arr[p][j] + " ");
     }
   }
   print(arr, i + 1, j + 1, m - 1, n - 1);
