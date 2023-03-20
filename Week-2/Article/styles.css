@@ -1,50 +1,47 @@
 h1 {
-    text-align: center;
-    color: black;
-    font-family: Cursive;
-  }
-  h2 {
-    text-align: center;
-    color: Black;
-    font-family: Monospace;
-  }
-  .column {
-    float: left;
-    width: 50%;
-  }
-  .column1 {
-    float: right;
-    width: 50%;
-  }
-  
-  .row {
-    float: right;
-    width: 50%;
-  }
-  
-  p {
-    padding-top: 30px;
-    padding-left: 100px;
-    padding-right: 90px;
-    font-size: 20;
-    text-align: justify;
-    margin: 0 0 15px 0;
-  }
-  
-  .photo {
-    padding-left: 150px;
-  }
-  
-  .first-paragraph {
-    margin: 0 0 15px 0;
-    font-size: 20;
-    text-align: justify;
-    padding-top: 30px;
-    font-family: Garamond, serif;
-  }
-  
-  .form {
-    padding-left: 100px;
-    padding-right: 900px;
-  }
-  
+  text-align: center;
+  color: black;
+}
+h2 {
+  text-align: center;
+  color: Black;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+.column1 {
+  float: right;
+  width: 50%;
+}
+
+.row {
+  float: right;
+  width: 50%;
+}
+
+p {
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 90px;
+  font-size: 20;
+  text-align: justify;
+  margin: 0 0 15px 0;
+}
+
+.photo {
+  padding-left: 150px;
+}
+
+.first-paragraph {
+  margin: 0 0 15px 0;
+  font-size: 20;
+  text-align: justify;
+  padding-top: 30px;
+  font-family: Garamond, serif;
+}
+
+.form {
+  padding-left: 100px;
+  padding-right: 900px;
+}
