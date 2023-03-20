@@ -1,11 +1,17 @@
-
+:root {
+  --color-white: #ffffff;
+  --color-bgwhite: #f2f2f2;
+  --color-blue: blue;
+  --color-grey: #4e4e4e;
+  --color-black: black;
+}
 body {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--color-white);
   margin: 0;
   font-family: Lato, sans-serif;
-  color: black;
+  color: var(--color-black);
 }
 
 main {
@@ -19,12 +25,12 @@ aside {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #f2f2f2;
+  background-color: var(--color-bgwhite);
 }
 
 footer {
   flex: 0 0 90px;
-  color: #fff;
+  color: var(--color-white);
   background-color: rgba(61, 100, 158, 0.9);
   display: flex;
   padding: 10px;
@@ -44,7 +50,7 @@ li span.catty-cloud {
   border: 1px solid black;
   font-size: 0.6em;
   padding: 3px;
-  color: blue;
+  color: var(--color-blue);
 }
 
 .last-song {
@@ -52,7 +58,7 @@ li span.catty-cloud {
 }
 
 li:nth-child(2n) {
-  background-color: #f2f2f2;
+  background-color: var(--color-white);
 }
 
 .content {
@@ -65,7 +71,7 @@ li:nth-child(2n) {
   flex: 0 0 280px;
   display: flex;
   padding: 40px;
-  background-color: #4e4e4e;
+  background-color: var(--color-grey);
 }
 
 .music-list {
@@ -81,7 +87,7 @@ li:nth-child(2n) {
   display: flex;
   flex-direction: column;
   font-weight: 500;
-  color: #fff;
+  color: var(--color-white);
   padding-left: 50px;
 }
 
@@ -112,4 +118,4 @@ li:nth-child(2n) {
   justify-content: space-around;
   align-items: center;
 }
-
+ 
