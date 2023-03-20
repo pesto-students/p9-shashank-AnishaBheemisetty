@@ -1,25 +1,23 @@
-var Person = function() {};
-
-Person.prototype.initialize = function(name, age)
-{
+class Person {
+  constructor() {}
+  initialize(name, age) {
     this.name = name;
     this.age = age;
-}
-
-Person.prototype.describe = function()
-{
+  }
+  describe() {
     return this.name + ", " + this.age + " years old.";
+  }
 }
 
-var Student = function() {};
+class Student {
+  constructor() {}
+  learn(subject) {
+    console.log(this.name + " just learned " + subject);
+  }
+}
 Student.prototype = new Person();
 
-Student.prototype.learn = function(subject)
-{
-    console.log(this.name + " just learned " + subject);
-}
-
-var him = new Student();
+const him = new Student();
 
 him.initialize("John", 25);
 him.learn("Inheritance");
